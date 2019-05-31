@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/onehalfdark.vim
+" Filename: autoload/lightline/colorscheme/onepercdark.vim
 " Author: sonph
 " License: MIT License
 " Last Change: 2016/06/22
@@ -39,4 +39,4 @@ let s:p.tabline.tabsel = [ [ s:mono3, s:mono2 ] ]
 let s:p.tabline.middle = [ [ s:mono2, s:mono1] ]
 let s:p.tabline.right = [ [ s:mono0, s:mono3 ] ]
 
-let g:lightline#colorscheme#onehalfdark#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#onepercdark#palette = lightline#colorscheme#flatten(s:p)

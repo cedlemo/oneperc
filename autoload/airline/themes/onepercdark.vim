@@ -1,11 +1,11 @@
 " ==============================================================================
-"   Name:        One Half Dark
+"   Name:        One Perc Dark
 "   Author:      Son A. Pham <sp@sonpham.me>
-"   Url:         https://github.com/sonph/onehalf
+"   Url:         https://github.com/sonph/oneperc
 "   License:     The MIT License (MIT)
 "
-"   A dark vim-airline theme based on Atom's One, best used with the onehalf
-"   vim colorschemes. See github.com/sonph/onehalf for installation
+"   A dark vim-airline theme based on Atom's One, best used with the oneperc
+"   vim colorschemes. See github.com/sonph/oneperc for installation
 "   instructions, a light theme and colorschemes for other editors/terminals.
 "
 "   For documentation, see :h airline-themes or vim-airline's dark.vim theme at
@@ -34,7 +34,7 @@ let s:red_g = '#e06c75'
 let s:red_c = 168
 
 
-let g:airline#themes#onehalfdark#palette = {}
+let g:airline#themes#onepercdark#palette = {}
 
 
 " Normal mode
@@ -43,9 +43,9 @@ let s:normal_outer = [s:dark_g, s:green_g, s:dark_c, s:green_c]
 let s:normal_middle = [s:light_g, s:med_hi_g, s:light_c, s:med_hi_c]
 let s:normal_inner = [s:green_g, s:med_lo_g, s:green_c, s:med_lo_c]
 let s:normal_inner_modified = [s:yellow_g, s:med_lo_g, s:yellow_c, s:med_lo_c]
-let g:airline#themes#onehalfdark#palette.normal = 
+let g:airline#themes#onepercdark#palette.normal = 
     \ airline#themes#generate_color_map(s:normal_outer, s:normal_middle, s:normal_inner)
-let g:airline#themes#onehalfdark#palette.normal_modified =
+let g:airline#themes#onepercdark#palette.normal_modified =
     \ airline#themes#generate_color_map(s:normal_outer, s:normal_middle, s:normal_inner_modified)
 
 
@@ -53,36 +53,36 @@ let g:airline#themes#onehalfdark#palette.normal_modified =
 let s:insert_outer = [s:med_lo_g, s:blue_g, s:med_lo_c, s:blue_c]
 let s:insert_middle = s:normal_middle
 let s:insert_inner = [s:blue_g, s:med_lo_g, s:blue_c, s:med_lo_c]
-let g:airline#themes#onehalfdark#palette.insert = 
+let g:airline#themes#onepercdark#palette.insert = 
     \ airline#themes#generate_color_map(s:insert_outer, s:insert_middle, s:insert_inner)
-let g:airline#themes#onehalfdark#palette.insert_modified = 
-    \ copy(g:airline#themes#onehalfdark#palette.normal_modified)
+let g:airline#themes#onepercdark#palette.insert_modified = 
+    \ copy(g:airline#themes#onepercdark#palette.normal_modified)
 
 
 " Replace mode
 let s:replace_outer = [s:med_lo_g, s:red_g, s:med_lo_c, s:red_c]
 let s:replace_middle = s:normal_middle
 let s:replace_inner = [s:red_g, s:med_lo_g, s:red_c, s:med_lo_c]
-let g:airline#themes#onehalfdark#palette.replace =
+let g:airline#themes#onepercdark#palette.replace =
     \ airline#themes#generate_color_map(s:replace_outer, s:replace_middle, s:replace_inner)
-let g:airline#themes#onehalfdark#palette.replace_modified = 
-    \ copy(g:airline#themes#onehalfdark#palette.insert_modified)
+let g:airline#themes#onepercdark#palette.replace_modified = 
+    \ copy(g:airline#themes#onepercdark#palette.insert_modified)
 
 
 " Visual mode
 let s:visual_outer = [s:dark_g, s:yellow_g, s:dark_c, s:yellow_c]
 let s:visual_middle = s:normal_middle
 let s:visual_inner = [s:yellow_g, s:med_lo_g, s:yellow_c, s:med_lo_c]
-let g:airline#themes#onehalfdark#palette.visual = 
+let g:airline#themes#onepercdark#palette.visual = 
     \ airline#themes#generate_color_map(s:visual_outer, s:visual_middle, s:visual_inner)
-let g:airline#themes#onehalfdark#palette.visual_modified = 
-    \ copy(g:airline#themes#onehalfdark#palette.insert_modified)
+let g:airline#themes#onepercdark#palette.visual_modified = 
+    \ copy(g:airline#themes#onepercdark#palette.insert_modified)
 
 
 " Inactive window
 let s:inactive = [s:light_g, s:med_lo_g, s:light_c, s:med_lo_c]
 let s:inactive_modified = [s:yellow_g, '', s:yellow_c, '']
-let g:airline#themes#onehalfdark#palette.inactive = 
+let g:airline#themes#onepercdark#palette.inactive = 
     \ airline#themes#generate_color_map(s:inactive, s:inactive, s:inactive)
-let g:airline#themes#onehalfdark#palette.inactive_modified = 
+let g:airline#themes#onepercdark#palette.inactive_modified = 
     \ airline#themes#generate_color_map(s:inactive, s:inactive, s:inactive_modified)
