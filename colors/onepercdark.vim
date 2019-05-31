@@ -1,10 +1,10 @@
 " ==============================================================================
 "   Name:        One Half Dark
 "   Author:      Son A. Pham <sp@sonpham.me>
-"   Url:         https://github.com/sonph/onehalf
+"   Url:         https://github.com/sonph/oneperc
 "   License:     The MIT License (MIT)
 "
-"   A dark vim color scheme based on Atom's One. See github.com/sonph/onehalf
+"   A dark vim color scheme based on Atom's One. See github.com/sonph/oneperc
 "   for installation instructions, a light color scheme, versions for other
 "   editors/terminals, and a matching theme for vim-airline.
 " ==============================================================================
@@ -13,8 +13,8 @@ set background=dark
 highlight clear
 syntax reset
 
-let g:colors_name="onehalfdark"
-let colors_name="onehalfdark"
+let g:colors_name="onepercdark"
+let colors_name="onepercdark"
 
 
 let s:black       = { "gui": "#282828", "cterm": "235" }
@@ -41,33 +41,33 @@ let s:vertsplit   = { "gui": "#282828", "cterm": "235" }
 
 let s:none = ['NONE', 'NONE']
 
-if !exists('g:onehalfdark_italic')
+if !exists('g:onepercdark_italic')
   if has('gui_running') || $TERM_ITALICS == 'true'
-    let g:onehalfdark_italic=1
+    let g:onepercdark_italic=1
   else
-    let g:onehalfdark_italic=0
+    let g:onepercdark_italic=0
   endif
 endif
 
-if !exists('g:onehalfdark_improved_strings')
-  let g:onehalfdark_improved_strings=0
+if !exists('g:onepercdark_improved_strings')
+  let g:onepercdark_improved_strings=0
 endif
 
 let s:italic = 'italic,'
-if g:onehalfdark_italic == 0
+if g:onepercdark_italic == 0
   let s:italic = ''
 endif
 
 let s:italicize_comments = s:italic
-if exists('g:onehalfdark_italicize_comments')
-  if g:onehalfdark_italicize_comments == 0
+if exists('g:onepercdark_italicize_comments')
+  if g:onepercdark_italicize_comments == 0
     let s:italicize_comments = ''
   endif
 endif
 
 let s:italicize_strings = ''
-if exists('g:onehalfdark_italicize_strings')
-  if g:onehalfdark_italicize_strings == 1
+if exists('g:onepercdark_italicize_strings')
+  if g:onepercdark_italicize_strings == 1
     let s:italicize_strings = s:italic
   endif
 endif
@@ -153,7 +153,7 @@ call s:h("WildMenu", s:fg, "", "")
 " Syntax colors {
 call s:h('Comment', s:comment_fg, "None", s:italicize_comments)
 
-if g:onehalfdark_improved_strings == 1
+if g:onepercdark_improved_strings == 1
   call s:h('String',  s:green, "None", s:italicize_strings)
 else
   call s:h('String',  s:green, s:none, "")
